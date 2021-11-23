@@ -14,6 +14,7 @@
   --dark-background-color: #2f303a;
   --footer-link-color: rgba(255, 255, 255, 0.6);
   --backgroun-color: #ffffff;
+  --background-btn-color: #F5F4FA;
 }
 p,
 h1,
@@ -59,7 +60,7 @@ body {
 
 
 .container {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -324,6 +325,20 @@ border-radius: 4px;
   letter-spacing: 0.03em;
   color: var(--footer-link-color);
 }
+.button-container {
+ 
+}
+.button-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+}
+
+.button-item:not(:last-child) {
+  margin-right: 8px;
+  color: var(--accent-color);
+}
+
 .btn-item {
   cursor: pointer;
   font-family: Roboto;
@@ -334,11 +349,50 @@ border-radius: 4px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-btn-text-color);
+  background-color: var(--background-btn-color);
+  border: 0px;
+  border-radius: 4px;
+  padding: 6px 22px;
 }
 .btn-item:hover,
 .btn-item:focus {
   color: var(--first-btn-text-color);
+  background-color: var(--accent-color);
 }
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 94px;
+  
+}
+.porfolio-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: 20px;
+  border-color: #eeeeee;
+}
+.porfolio-item:nth-child(3n + 0) {
+  margin-right: 0;
+}
+
+.porfolio-item:nth-child(n + 6) {
+  margin-bottom: 0;
+}
+
+.img-portfolio {
+  display: block;
+}
+
+.wrap-text {
+ padding: 20px 24px;
+ background: #ffffff;
+ border: 1px solid #eeeeee;
+ border-top: 0;
+ box-sizing: border-box;
+}
+
 .portfolio-heading {
   font-weight: 700;
   font-size: 18px;
@@ -354,3 +408,5 @@ border-radius: 4px;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
+
+
