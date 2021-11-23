@@ -42,7 +42,9 @@ body {
   font-family: "Roboto", sans-serif;
   color: #212121;
 }
-
+.header {
+  border-bottom: 1px solid #ECECEC;
+}
 .header-navigation {
   display: flex;
   align-items: center;
@@ -52,6 +54,7 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 80px;
+  
 }
 
 .header-list {
@@ -365,6 +368,7 @@ border-radius: 4px;
   flex-wrap: wrap;
   padding-top: 50px;
   padding-bottom: 94px;
+  justify-content: center;
   
 }
 .porfolio-item {
